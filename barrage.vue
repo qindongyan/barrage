@@ -33,7 +33,8 @@
     }
 </style>
 <script>
-    import { Component, life } from 'miox-vue2x-classify';
+    //import { Component, life } from 'miox-vue2x-classify';
+    import Component from 'vue-class-component';
 
     const bodyWidth = window.document.body.clientWidth;
     @Component({
@@ -51,7 +52,7 @@
     })
     export default class Barrage {
         current = -1;
-        @life
+        
         mounted() {
             this.move();
         }
